@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-primary bg-light p-3">
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ford_Motor_Company_Logo.svg/2560px-Ford_Motor_Company_Logo.svg.png"
+    width="8%"
+    alt="image"
+  />
+
+
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    #collapseButton
+    data-bs-toggle="collapse"
+    aria-expanded="false"
+    data-bs-target="#navbarcollapse"
+    aria-controls="navbarcollapse"
+    (click)="toggleMenu(collapseButton,collapsePanel)"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div #collapsePanel [ngbCollapse]="navbarCollapsed" class="collapse navbar-collapse" id="navbarcollapse">
+    <ul class="navbar-nav me-2">
+      <li class="nav-item">
+        <a class="nav-link colorFord" href="#"
+          >Vehicles</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link colorFord" href="#">Shop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link colorFord" href="#">Fleet</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link colorFord" href="#">Engineering</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link colorFord" href="#">About Ford</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link colorFord" href="#">Owner</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="" id="navbarcollapse2">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item dropdown mr-3">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+          <i class="fas fa-user colorFord"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a routerLink="/configuracion" class="dropdown-item">
+            <i class="fas fa-cog"> </i> Configuración
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

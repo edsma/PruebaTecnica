@@ -1,0 +1,112 @@
+<div class="slideshow-container">
+  <a class="prev" (click)="plusSlides(-1)">❮</a>
+  <div class="mySlides fade" *ngFor="let auto of automovil; let i = index">
+    <div class="numbertext">{{ i + 1 }} / {{ automovil.length }}</div>
+    <img src="{{ auto.urlImagen }}" style="width: 100%" />
+    <div class="textdescription">{{ auto.titulo }}</div>
+
+    <div class="buttonImage btn-group" role="group" aria-label="Basic example">
+      <button class="btn btn-outline-light">Learn more</button>
+      <button class="btn btn-outline-light">Reserve now</button>
+    </div>
+  </div>
+  <a class="next" (click)="plusSlides(1)">❯</a>
+</div>
+<br />
+<div style="text-align: center">
+  <span class="dot" *ngFor="let auto of automovil; let i = index" (click)="currentSlide(i + 1)"></span>
+
+</div>
+<br />
+<section id="templates">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card text-center bg-info text-white mb-3">
+          <div class="card-body colorBackground">
+            <p>
+              For any concerns or inquiries about your Ford vehicle, our
+              Customer Relationship Center can be of assistance to you. Please
+              call +632 8866 9408 or send us an email at emailus@ford.com.​
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="templates">
+  <div class="container">
+    <h3 class="textColor">A Ford vehicle for every lifestyle</h3>
+  </div>
+  <hr />
+
+  <div class="card-group">
+    <div class="card" *ngFor="let auto of automovil; let i = index">
+      <img
+        class="card-img-top"
+        src="{{ auto.urlImagen }}"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <div class="textdescriptionMenor">
+          {{ auto.titulo }}
+        </div>
+        <div class="textdescriptionMenorSecondary">Explore ></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h3 class="textColor">What’s happening at Ford</h3>
+  </div>
+</section>
+
+<div class="card-group">
+  <div
+    class="card"
+    style="margin-left: 10px"
+    *ngFor="let auto of automovil; let i = index"
+  >
+    <img class="card-img-top" src="{{ auto.urlImagen }}" alt="Card image cap" />
+    <div class="card-body">
+      <div class="textdescriptionTop">
+        {{ auto.titulo }}
+      </div>
+      <div class="textdescriptionInside">
+        {{ auto.descripcion }}
+      </div>
+      <div class="textdescriptionMenorSecondary">Explore ></div>
+    </div>
+  </div>
+</div>
+
+<section id="templates">
+  <div class="container ">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card text-center text-white mb-3">
+          <div class="card-body footerInfo" style="height: 150px;">
+            <p>Explore More</p>
+
+            <div
+            class="buttonImage btn-group text-center"
+            style="margin-left: 33%"
+            role="group"
+            aria-label="Basic example"
+          >
+            <button class="btn btn-outline-light">Latest offers</button>
+            <button class="btn btn-outline-light">View Pricelist</button>
+            <button class="btn btn-outline-light">Build & Price</button>
+          </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

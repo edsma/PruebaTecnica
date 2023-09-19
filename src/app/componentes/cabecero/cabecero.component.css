@@ -1,0 +1,11 @@
+.colorFord{
+  color: #00095b ;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
