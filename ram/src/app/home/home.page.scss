@@ -1,0 +1,67 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footerInfo{
+  background-image: url("https://www.ford.com.ph/content/ford/ph/en_ph/home/jcr:content/par/common_box_182740620/generalParsys/common_box/generalParsys/common_box/generalParsys/billboard/imageComponent/image.imgs.full.high.jpg");
+}
+
+
+h1{
+  margin-left: 10px;
+}
+
+.center-button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.swipperSmall{
+  width: 20%;
+  height: 20%;
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.buttonImage {
+  color: #f2f2f2;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 70%;
+  left: 40px;
+}
+
+.textdescription {
+  color: #f2f2f2;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50%;
+  left: 40px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
